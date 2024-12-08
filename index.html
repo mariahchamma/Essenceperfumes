@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence Perfumery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #f0b1d8;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+        header h1 {
+            margin: 0.5rem 0;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 1rem;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            color: #f0b1d8;
+            margin: 0.5rem 0;
+        }
+        .product-card p {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+        .payment-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .payment-form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .payment-form button {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #f0b1d8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/mnt/data/47EB376C-794C-4DF5-8BC6-07A804060D16.jpeg" alt="Essence Perfumery Logo">
+        <h1>Essence Perfumery</h1>
+    </header>
+    <div class="search-bar">
+        <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for products...">
+    </div>
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400?text=CHANEL+N5" alt="CHANEL N5">
+                <h3>CHANEL N5</h3>
+                <p>Capacity: 100ml</p>
+                <p>Price: $65 AUD</p>
+                <p>Product Code: 5306</p>
+                <button onclick="alert('CHANEL N5 added to cart')">Add to Cart</button>
+            </div>
+            <!-- Add more products dynamically here -->
+        </section>
+        <div class="payment-form">
+            <h2>Checkout</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Expiration Date (MM/YY)" required>
+                <input type="text" placeholder="CVV" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Essence Perfumery. All rights reserved.</p>
+        <p>Email: <a href="mailto:essence_perfumery@gmail.com" style="color: white;">essence_perfumery@gmail.com</a></p>
+    </footer>
+</body>
+</html>
